@@ -1,0 +1,16 @@
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\InformationCenterApp.deps.json
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\InformationCenterApp.runtimeconfig.json
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\InformationCenterApp.runtimeconfig.dev.json
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\InformationCenterApp.dll
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\InformationCenterApp.pdb
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\Information.Data.dll
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\InformationModels.dll
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\Information.Data.pdb
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\bin\Debug\netcoreapp2.0\InformationModels.pdb
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\obj\Debug\netcoreapp2.0\InformationCenterApp.csprojAssemblyReference.cache
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\obj\Debug\netcoreapp2.0\InformationCenterApp.csproj.CoreCompileInputs.cache
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\obj\Debug\netcoreapp2.0\InformationCenterApp.AssemblyInfoInputs.cache
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\obj\Debug\netcoreapp2.0\InformationCenterApp.AssemblyInfo.cs
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\obj\Debug\netcoreapp2.0\InformationCenterApp.csproj.CopyComplete
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\obj\Debug\netcoreapp2.0\InformationCenterApp.dll
+F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationCenterApp\obj\Debug\netcoreapp2.0\InformationCenterApp.pdb
