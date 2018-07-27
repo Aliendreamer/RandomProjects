@@ -1,9 +1,0 @@
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\bin\Debug\netcoreapp2.0\InformationModels.deps.json
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\bin\Debug\netcoreapp2.0\InformationModels.dll
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\bin\Debug\netcoreapp2.0\InformationModels.pdb
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\obj\Debug\netcoreapp2.0\InformationModels.csprojAssemblyReference.cache
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\obj\Debug\netcoreapp2.0\InformationModels.csproj.CoreCompileInputs.cache
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\obj\Debug\netcoreapp2.0\InformationModels.AssemblyInfoInputs.cache
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\obj\Debug\netcoreapp2.0\InformationModels.AssemblyInfo.cs
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\obj\Debug\netcoreapp2.0\InformationModels.dll
-F:\c#\EntityFramework06.2018\AutoMappingExcerciseRepositoryPattern\InformationModels\obj\Debug\netcoreapp2.0\InformationModels.pdb
