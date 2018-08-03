@@ -1,9 +1,0 @@
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\bin\Debug\netcoreapp2.0\CarDealer.Models.deps.json
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\bin\Debug\netcoreapp2.0\CarDealer.Models.dll
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\bin\Debug\netcoreapp2.0\CarDealer.Models.pdb
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\obj\Debug\netcoreapp2.0\CarDealer.Models.csprojAssemblyReference.cache
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\obj\Debug\netcoreapp2.0\CarDealer.Models.csproj.CoreCompileInputs.cache
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\obj\Debug\netcoreapp2.0\CarDealer.Models.AssemblyInfoInputs.cache
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\obj\Debug\netcoreapp2.0\CarDealer.Models.AssemblyInfo.cs
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\obj\Debug\netcoreapp2.0\CarDealer.Models.dll
-F:\csharp\EntityFramework06.2018\xmlProcessingExcercisses\CarDealer.Models\obj\Debug\netcoreapp2.0\CarDealer.Models.pdb
