@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <meta charset="utf-8" />
+    <title>IRunes</title>
+</head>
+
+<body>
+
+    <div class="container-fluid" style="background: green; border: thin solid white;">
+        <a class="navbar-brand"><span style="color: white">IRunes</span></a>
+        <ul class="nav  nav-pills">
+            <li><a href="/"><span style="color: white">Home</span></a></li>
+            <li><a href="/users/login"><span style="color: white">Login</span></a></li>
+            <li><a href="/users/register"><span style="color: white">Register</span></a></li>
+        </ul>
+    </div>
+    <hr style="color: green; height: 5px; margin: 5px; border-color: green;" />
+
+    <h3 align="center" style="text-align: center"><span style="color: green"><strong>Register</strong></span></h3>
+    <div style="width: 30%; margin: auto;border: thin solid white">
+        <form style="display:block" method="post">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Username...">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password...">
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" name="confirmPassword" placeholder="Confirm Password...">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" name="email" placeholder="Enter email">
+            </div>
+
+            <button type="submit" class="btn btn-primary  btn-success" style="width:100px;margin:0 50%;position:relative;left:-50px;">Register</button>
+        </form>
+    </div>
+
+    <hr style="color: darkgreen; height: 5px; margin: 5px; border-color: darkgreen; display: block;height: auto" />
+    <footer>
+        <p style="text-align: center;font-weight: bold">Copyright &copy; Sanity Design Studios. All rights reserved.</p>
+    </footer>
+
+    <script src="/resources/js/jquery-3.3.1.min.js"></script>
+    <script src="/resources/js/popper.min.js"></script>
+    <script src="/Resources/js/bootstrap.min.js"></script>
+</body>
+</html>

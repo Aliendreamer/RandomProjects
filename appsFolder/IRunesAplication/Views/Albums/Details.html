@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <meta charset="utf-8" />
+    <title>IRunes</title>
+</head>
+<body>
+    <div class="container-fluid" style="background: darkgreen; border: thin solid white;">
+        <a class="navbar-brand"><span style="color: white">IRunes</span></a>
+        <ul class="nav  nav-pills">
+            <li><a href="/"><span style="color: white;text-align: center ">Home</span></a></li>
+            <li><a href="/albums/all"><span style="color: white;text-align: center">Albums</span></a></li>
+            <li><a href="/users/logout"><span style="color: white;text-align: center">Logout</span></a></li>
+        </ul>
+    </div>
+    <hr style="color: darkgreen; width: 100%; margin: 5px; border-color: darkgreen;height: 2px; border-bottom: 3px;margin-bottom: 15px" />
+
+    <div class="col-md-6">
+        <img src="{{{albumCover}}}" style="height: 40%;width: 70%" />
+
+        <div class="row">
+            <h4 style="text-align: left;margin-left: 10%">Album Name:  {{{albumName}}}</h4>
+        </div>
+        <div class="row">
+            <h4 style="text-align: left;margin-left: 15%">Album Price:${{{albumPrice}}}</h4>
+        </div>
+        <a href="/tracks/create?albumId={{{albumId}}}" class="btn btn-success">Create track</a>
+
+        <a href="/albums/all" class="btn btn-success" style="margin-left: 28%">Back To All</a>
+    </div>
+    <div class="col-md-6">
+        <h4><strong style="font-family: cursive;margin-left: 20px">Tracks</strong></h4>
+        {{{albumTracks}}}
+    </div>
+
+    <div class="container-fluid col-md-12">
+        <hr style="color: darkgreen; height: 2px; background: darkgreen; margin: 5px; background: darkgreen; border-color: darkgreen; margin-top:30px; border-bottom: 2px;" />
+
+        <footer>
+            <p style="text-align: center; font-weight: bold">Copyright &copy; Sanity Design Studios. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="/resources/js/jquery-3.3.1.min.js"></script>
+    <script src="/resources/js/popper.min.js"></script>
+    <script src="/Resources/js/bootstrap.min.js"></script>
+</body>
+</html>

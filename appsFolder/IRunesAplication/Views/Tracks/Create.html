@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <meta charset="utf-8" />
+    <title>IRunes</title>
+</head>
+<body>
+    <div class="container-fluid" style="background: darkgreen; border: thin solid white;">
+        <a class="navbar-brand"><span style="color: white">IRunes</span></a>
+        <ul class="nav  nav-pills">
+            <li><a href="/"><span style="color: white;text-align: center ">Home</span></a></li>
+            <li><a href="/albums/all"><span style="color: white;text-align: center">Albums</span></a></li>
+            <li><a href="/users/logout"><span style="color: white;text-align: center">Logout</span></a></li>
+        </ul>
+    </div>
+    <hr style="color: darkgreen; height: 5px; margin: 5px; border-color: darkgreen; margin-top:5px; display: block;height: auto" />
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h3 style="color: green; margin-left: 25%;text-effect:outline">Create Track</h3>
+            <hr style="color: green; height: 2px; background: green; border-bottom-color: green;border-bottom:5px" />
+
+            <form role="form" method="post">
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <label>
+                            Name
+                        </label>
+                        <input type="text" class="form-control" name="trackName" value="Name...">
+                    </div>
+                    <div class="col-md-5 form-group">
+                        <label>
+                            Link
+                        </label>
+                        <input type="text" class="form-control" name="trackUrl" value="Link...">
+                    </div>
+                    <div class="col-md-5 form-group" style="float:right">
+                        <label>
+                            Price
+                        </label>
+                        <input type="text" class="form-control" name="trackPrice" value="Price...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input type="hidden" class="form-control" name="albumId" value="{{{albumId}}}" />
+                    </div>
+                </div>
+                <hr style="color: green; height: 2px; background: green; border-bottom-color: green;border-bottom:5px" />
+
+                <div class="col-md-6">
+                    <button type="submit" class="btn btn-success btn btn-primary" style="margin-left:25%">Create</button>
+                </div>
+                <div class="col-md-6 next btn">
+                    <a href={{{albumPathHolder}}} class="btn btn-primary btn-success" style="margin-right: 25%">Back To Album</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-fluid col-md-12">
+        <hr style="color: green; height: 2px; background: green; margin: 5px; background: green; border-color: green; margin-top:30px;height: auto" />
+
+        <footer>
+            <p style="text-align: center; font-weight: bold">Copyright &copy; Sanity Design Studios. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="/resources/js/jquery-3.3.1.min.js"></script>
+    <script src="/resources/js/popper.min.js"></script>
+    <script src="/Resources/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <meta charset="utf-8" />
+    <title>IRunes</title>
+</head>
+<body>
+    <div class="container-fluid" style="background: darkgreen; border: thin solid white;">
+        <a class="navbar-brand"><span style="color: white">IRunes</span></a>
+        <ul class="nav  nav-pills">
+            <li><a href="/"><span style="color: white;text-align: center ">Home</span></a></li>
+            <li><a href="/albums/all"><span style="color: white;text-align: center">Albums</span></a></li>
+            <li><a href="/users/logout"><span style="color: white;text-align: center">Logout</span></a></li>
+        </ul>
+    </div>
+    <hr style="color: darkgreen; margin: 5px; border-color: darkgreen;height: 2px; border-bottom: 3px;margin-bottom: 15px" />
+    <div class="container-fluid" style="margin-top: 20px">
+        <div class="row" style="text-align: center">
+            <p><strong>Track Name: {{{trackTitleDetails}}}</strong></p>
+        </div>
+        <div class="row" style="text-align: center;">
+            <p><strong>Track Price: ${{{trackPriceDetails}}}</strong></p>
+        </div>
+
+        <div style="display: inline; margin-left: 35%;margin-top: 5px">
+            <div class="row">
+                <hr style="margin-left:675px; margin-right: 645px; height: 2px; margin-bottom: 1px; margin-bottom: 4px; border-bottom: 2px;color: darkgreen; background: darkgreen; align-content: center; border-color: darkgreen;" />
+            </div>
+            <iframe class="embed-responsive-item" style="margin-left:35%; width: 600px; height: 300px" src="{{{trackUrl}}}" name="{{{trackUrlName}}}"></iframe>
+            <div class="row">
+                <hr style="margin-left:675px; margin-right: 645px; height: 2px; margin-bottom: 1px; margin-top: 3px; border-bottom: 2px;color: darkgreen; background: darkgreen; align-content: center; border-color: darkgreen;" />
+            </div>
+            <div class="row" style="margin-top: 5px">
+                <a class="btn btn-success btn-sm" style="margin-left: 48%" href="/albums/details?id={{{albumPathHolder}}}"> Back To Album</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid col-md-12">
+        <hr style="color: darkgreen; height: 2px; background: darkgreen; margin: 5px; background: darkgreen; border-color: darkgreen; margin-top:30px; border-bottom: 2px;" />
+
+        <footer>
+            <p style="text-align: center; font-weight: bold">Copyright &copy; Sanity Design Studios. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="/resources/js/jquery-3.3.1.min.js"></script>
+    <script src="/resources/js/popper.min.js"></script>
+    <script src="/Resources/js/bootstrap.min.js"></script>
+</body>
+</html>

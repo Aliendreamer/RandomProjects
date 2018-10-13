@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="/resources/css/bootstrap.min.css" />
+    <meta charset="utf-8" />
+    <title>IRunes</title>
+</head>
+<body>
+    <div class="container-fluid" style="background: darkgreen; border: thin solid white;">
+        <a class="navbar-brand"><span style="color: white">IRunes</span></a>
+        <ul class="nav  nav-pills">
+            <li><a href="/"><span style="color: white;text-align: center ">Home</span></a></li>
+            <li><a href="/albums/all"><span style="color: white;text-align: center">Albums</span></a></li>
+            <li><a href="/users/logout"><span style="color: white;text-align: center">Logout</span></a></li>
+        </ul>
+    </div>
+    <hr style="color: darkgreen; height: 5px; margin: 5px; border-color: darkgreen; margin-top:5px; display: block;height: auto" />
+
+    <div class="col-md-8" style="margin-left: 30%;  border: thin solid white">
+
+        <form class="form-horizontal" method="post" style="display: inline">
+            <h3 style="color: green; margin-left: 25%;text-effect:outline">Create Album</h3>
+
+            <hr style="color: green; height: 2px; margin-right: 34%; background: green; border-bottom-color: green;border-bottom:5px" />
+
+            <div class="form-group">
+                <label class="col-md-8 control-label" style="text-align: left;margin-top: 2px">Name</label>
+                <div class="col-md-8" style="align-content: center">
+                    <input type="text" class="form-control" name="albumName" placeholder="Name...">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-8 control-label" style="text-align: left">Cover</label>
+                <div class="col-md-8">
+                    <input type="url" class="form-control" name="albumCover" placeholder="Cover...">
+                </div>
+            </div>
+            <hr style="color: green; height: 2px; margin-right: 34%; background: green; border-color: green;" />
+
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-success btn btn-primary" style="margin-left: 10%">Create</button>
+            </div>
+            <div class="col-md-6 next btn">
+                <a href="/albums/all" class="btn btn-primary btn-success" style="margin-right: 75%">Back To All</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-fluid col-md-12">
+        <hr style="color: green; height: 2px; background: green; margin: 5px; background: green; border-color: green; margin-top:30px;height: auto" />
+
+        <footer>
+            <p style="text-align: center; font-weight: bold">Copyright &copy; Sanity Design Studios. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="/resources/js/jquery-3.3.1.min.js"></script>
+    <script src="/resources/js/popper.min.js"></script>
+    <script src="/Resources/js/bootstrap.min.js"></script>
+</body>
+</html>
