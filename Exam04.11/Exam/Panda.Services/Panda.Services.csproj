@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Panda.Infrastructure.csproj" />
+    <ProjectReference Include="..\Panda.Data\Panda.Data.csproj" />
+    <ProjectReference Include="..\Panda.Models\Panda.Domain.csproj" />
+    <ProjectReference Include="..\SIS.Framework\SIS.Framework.csproj" />
+  </ItemGroup>
+
+</Project>

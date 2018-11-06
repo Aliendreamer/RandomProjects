@@ -1,0 +1,13 @@
+﻿<tr class="row">
+    <td class="col-lg-1 d-flex justify-content-center"><h5>@Model.Number</h5></td>
+    <td class="col-lg-2 d-flex justify-content-center"><h5>@Model.Id</h5></td>
+    <td class="col-lg-2 d-flex justify-content-center"><h5>@Model.Description</h5></td>
+    <td class="col-lg-2 d-flex justify-content-center"><h5>@Model.Weight</h5></td>
+    <td class="col-lg-2 d-flex justify-content-center"><h5>@Model.ShippingAddress</h5></td>
+    <td class="col-lg-2 d-flex justify-content-center"><h5>@Model.Recipient</h5></td>
+    <td class="col-lg-1 d-flex justify-content-center">
+        <a href="/Packages/Ship?id=@Model.Id" class="btn bg-panda text-white"style="display: @Model.Ship">Ship</a> 
+        <a href="/Packages/Deliver?id=@Model.Id" class="btn bg-panda text-white"style="display: @Model.Deliver">Deliver</a> 
+        <a href="/Packages/Details?id=@Model.Id" class="btn bg-panda text-white"style="display: @Model.Details">Details</a> 
+    </td>
+</tr>

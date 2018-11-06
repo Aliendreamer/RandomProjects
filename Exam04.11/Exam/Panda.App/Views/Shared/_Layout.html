@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PANDA</title>
+    <link rel="stylesheet" type="text/css" href="/reset-css.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-md  navbar-dark bg-panda">
+                <div class="navbar-collapse collapse  dual-collapse2">
+                    <div class="navbar-collapse collapse navbar navbar-dark bg-panda">
+                        <a class="navbar-brand nav-link-white" href="/">PANDA</a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target=".dual-collapse2">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/Packages/Pending" style="display: @Model.IsAdmin">Pending</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/Packages/Shipped" style="display: @Model.IsAdmin">Shipped</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/Packages/Delivered" style="display: @Model.IsAdmin">Delivered</a>
+                        </li>
+                        <li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/Packages/Create" style="display: @Model.IsAdmin">Package</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2  navbar-dark bg-panda">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/Users/Login" style="display: @Model.NotLogged">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/Users/Register" style="display: @Model.NotLogged">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/Receipts/Index" style="display: @Model.IsLogged">Receipts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white active" href="/Users/LogOut" style="display: @Model.IsLogged">LogOut</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        @RenderBody()
+        <footer>
+            <div class="container-fluid bg-panda">
+                <div class="text-white p-2 text-center">
+                    &copy; CopyRight Sanity Web Design Studios 2018. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
