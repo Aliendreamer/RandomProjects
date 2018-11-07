@@ -9,6 +9,7 @@
     using System.Collections.Generic;
     using Microsoft.EntityFrameworkCore;
     using AutoMapper.QueryableExtensions;
+    using Infrastructure.Constants;
     using Infrastructure.ViewModels.InputModels;
     using Infrastructure.ViewModels.OutputModels;
 
@@ -84,7 +85,7 @@
 
         private void CreateReceipt(User user, Package package)
         {
-            decimal feePackage = (decimal)package.Weight * 2.67m;
+            decimal feePackage = (decimal)package.Weight * GlobalConstants.Constants.MultiplierConst;
             var receipt = new Receipt
             {
                 IssuedOn = DateTime.UtcNow,

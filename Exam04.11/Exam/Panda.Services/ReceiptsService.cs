@@ -7,6 +7,7 @@
     using System.Collections.Generic;
     using Microsoft.EntityFrameworkCore;
     using AutoMapper.QueryableExtensions;
+    using Domain.Enums;
     using Infrastructure.ViewModels.OutputModels;
 
     public class ReceiptsService : BaseService, IReceiptsService
@@ -16,7 +17,7 @@
             var user = GetUserByName(userName);
             List<ReceiptDisplayModel> receipts = new List<ReceiptDisplayModel>();
 
-            if (user.Role.ToString() == "Admin")
+            if (user.Role.ToString() == nameof(UserRole.Admin))
             {
                 receipts = this.Db.Receipts.ProjectTo<ReceiptDisplayModel>().ToList();
             }

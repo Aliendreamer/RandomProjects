@@ -2,7 +2,21 @@
 {
     public static class GlobalConstants
     {
-        public static class ViewSetups
+        public static class Constants
+        {
+            public const decimal MultiplierConst = 2.67m;
+
+            public const string DatetimeFormat = "M/d/yyyy";
+            public const string PendingStatusDate = "N/A";
+        }
+
+        public static class Error
+        {
+            public const string PackageResolverAcquiredError = "Acquired packages shouldn't be accessible";
+            public const string PackageResolverADefaultError = "Something went wrong with admin options";
+        }
+
+        public static class ViewSetup
         {
             public const string IsAdmin = "IsAdmin";
             public const string IsLogged = "IsLogged";

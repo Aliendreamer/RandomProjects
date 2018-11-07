@@ -5,6 +5,7 @@
     using Domain.Enums;
     using Domain.Models;
     using System.Globalization;
+    using Infrastructure.Constants;
     using Infrastructure.ViewModels.OutputModels;
 
     public class PackageDateResolver : IValueResolver<Package, PackageDetailsViewModel, string>
@@ -14,24 +15,24 @@
             switch (source.Status)
             {
                 case PackageStatus.Pending:
-                    destMember = "N/A";
+                    destMember = GlobalConstants.Constants.PendingStatusDate;
                     break;
 
                 case PackageStatus.Shipped:
                     // ReSharper disable once PossibleInvalidOperationException
-                    destMember = source.EstimatedDeliveryDate.Value.ToString("M/d/yyyy", CultureInfo.InvariantCulture);
+                    destMember = source.EstimatedDeliveryDate.Value.ToString(GlobalConstants.Constants.DatetimeFormat, CultureInfo.InvariantCulture);
                     break;
 
                 case PackageStatus.Delivered:
                     // ReSharper disable once PossibleInvalidOperationException
-                    destMember = "Delivered";
+                    destMember = nameof(PackageStatus.Delivered);
                     break;
 
                 case PackageStatus.Acquired:
-                    throw new InvalidOperationException("Acquired packages shouldn't be accessible");
+                    throw new InvalidOperationException(GlobalConstants.Error.PackageResolverAcquiredError);
 
                 default:
-                    throw new InvalidOperationException("Something went wrong with admin options");
+                    throw new InvalidOperationException(GlobalConstants.Error.PackageResolverADefaultError);
             }
 
             return destMember;
