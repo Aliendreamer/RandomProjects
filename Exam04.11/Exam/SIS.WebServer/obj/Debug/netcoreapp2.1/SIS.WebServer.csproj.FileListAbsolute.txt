@@ -1,0 +1,12 @@
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.WebServer.deps.json
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.WebServer.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.WebServer.pdb
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.csprojAssemblyReference.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.csproj.CoreCompileInputs.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.AssemblyInfoInputs.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.AssemblyInfo.cs
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.csproj.CopyComplete
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.pdb

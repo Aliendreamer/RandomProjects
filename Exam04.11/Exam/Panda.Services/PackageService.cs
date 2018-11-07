@@ -34,6 +34,7 @@
             var rng = new Random();
             var days = rng.Next(19, 41);
             package.EstimatedDeliveryDate = DateTime.UtcNow;
+            // ReSharper disable once ReturnValueOfPureMethodIsNotUsed
             package.EstimatedDeliveryDate.Value.AddDays(days);
             package.Status = PackageStatus.Shipped;
             this.Db.Packages.Update(package);

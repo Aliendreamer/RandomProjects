@@ -1,0 +1,9 @@
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\bin\Debug\netcoreapp2.1\Panda.Domain.deps.json
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\bin\Debug\netcoreapp2.1\Panda.Domain.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\bin\Debug\netcoreapp2.1\Panda.Domain.pdb
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\obj\Debug\netcoreapp2.1\Panda.Domain.csprojAssemblyReference.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\obj\Debug\netcoreapp2.1\Panda.Domain.csproj.CoreCompileInputs.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\obj\Debug\netcoreapp2.1\Panda.Domain.AssemblyInfoInputs.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\obj\Debug\netcoreapp2.1\Panda.Domain.AssemblyInfo.cs
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\obj\Debug\netcoreapp2.1\Panda.Domain.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Models\obj\Debug\netcoreapp2.1\Panda.Domain.pdb

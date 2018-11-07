@@ -8,8 +8,8 @@
     using Domain.Models;
     using SIS.Framework.Api;
     using Services.Interfaces;
-    using Services.PandaCommons;
     using SIS.Framework.Services;
+    using Services.PandaAutomapper;
 
     public class StartUp : MvcApplication
     {
@@ -19,7 +19,7 @@
             {
                 cfg.AddProfile<PandaProfile>();
             });
-            //InitializeDb();
+            InitializeDb();
         }
 
         public override void ConfigureServices(IDependencyContainer dependencyContainer)
@@ -36,17 +36,15 @@
             {
                 db.Database.EnsureCreated();
 
-                if (!db.Users.Any())
+                if (db.Users.Any()) return;
+                db.Users.Add(new User
                 {
-                    db.Users.Add(new User
-                    {
-                        Role = UserRole.Admin,
-                        Username = "Admin",
-                        Password = "admin",
-                        Email = "admin@admin.com"
-                    });
-                    db.SaveChanges();
-                }
+                    Role = UserRole.Admin,
+                    Username = "Admin",
+                    Password = "admin",
+                    Email = "admin@admin.com"
+                });
+                db.SaveChanges();
             }
         }
     }

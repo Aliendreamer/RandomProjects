@@ -2,7 +2,9 @@
 {
     using Interfaces;
     using System.Linq;
+    using Domain.Enums;
     using Domain.Models;
+    using Infrastructure.Constants;
     using System.Collections.Generic;
     using Microsoft.EntityFrameworkCore;
     using Infrastructure.ViewModels.OutputModels;
@@ -17,7 +19,7 @@
 
             var user = this.Db.Users.First(x => x.Username == username);
 
-            if (user.Role.ToString() == "Admin")
+            if (user.Role.ToString() == nameof(UserRole.Admin))
             {
                 allPackages = this.Db.Packages.Include(x => x.Recipient).ToList();
             }
@@ -28,36 +30,36 @@
             }
             var pending = new HomeIndexViewModel
             {
-                PackageType = "Pending",
+                PackageType = nameof(PackageStatus.Pending),
 
-                Packages = allPackages.Where(x => x.Status.ToString() == "Pending").Select(x => new PackageHomeModel
+                Packages = allPackages.Where(x => x.Status.ToString() == nameof(PackageStatus.Pending)).Select(x => new PackageHomeModel
                 {
                     Id = x.Id,
                     Description = x.Description,
-                    Type = "block",
-                    Acquire = "none"
+                    Type = GlobalConstants.Display.DisplayBlock,
+                    Acquire = GlobalConstants.Display.DisplayNone
                 }).ToList()
             };
             var shipped = new HomeIndexViewModel
             {
-                PackageType = "Shipped",
-                Packages = allPackages.Where(x => x.Status.ToString() == "Shipped").Select(x => new PackageHomeModel
+                PackageType = nameof(PackageStatus.Shipped),
+                Packages = allPackages.Where(x => x.Status.ToString() == nameof(PackageStatus.Shipped)).Select(x => new PackageHomeModel
                 {
                     Id = x.Id,
                     Description = x.Description,
-                    Type = "block",
-                    Acquire = "none"
+                    Type = GlobalConstants.Display.DisplayBlock,
+                    Acquire = GlobalConstants.Display.DisplayNone
                 }).ToList()
             };
             var delivered = new HomeIndexViewModel
             {
-                PackageType = "Delivered",
-                Packages = allPackages.Where(x => x.Status.ToString() == "Delivered" && x.Recipient.Username == username).Select(x => new PackageHomeModel
+                PackageType = nameof(PackageStatus.Delivered),
+                Packages = allPackages.Where(x => x.Status.ToString() == nameof(PackageStatus.Delivered) && x.Recipient.Username == username).Select(x => new PackageHomeModel
                 {
                     Id = x.Id,
                     Description = x.Description,
-                    Type = "none",
-                    Acquire = "block"
+                    Type = GlobalConstants.Display.DisplayNone,
+                    Acquire = GlobalConstants.Display.DisplayBlock
                 }).ToList()
             };
             packageRowsList.Add(pending);

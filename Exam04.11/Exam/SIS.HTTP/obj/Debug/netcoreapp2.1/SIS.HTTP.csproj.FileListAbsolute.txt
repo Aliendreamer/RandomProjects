@@ -1,0 +1,9 @@
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.deps.json
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csprojAssemblyReference.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.csproj.CoreCompileInputs.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfoInputs.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.AssemblyInfo.cs
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.HTTP\obj\Debug\netcoreapp2.1\SIS.HTTP.pdb

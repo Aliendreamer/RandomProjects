@@ -1,0 +1,14 @@
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\bin\Debug\netcoreapp2.1\Panda.Data.deps.json
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\bin\Debug\netcoreapp2.1\Panda.Data.runtimeconfig.json
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\bin\Debug\netcoreapp2.1\Panda.Data.runtimeconfig.dev.json
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\bin\Debug\netcoreapp2.1\Panda.Data.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\bin\Debug\netcoreapp2.1\Panda.Data.pdb
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\bin\Debug\netcoreapp2.1\Panda.Domain.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\bin\Debug\netcoreapp2.1\Panda.Domain.pdb
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\obj\Debug\netcoreapp2.1\Panda.Data.csprojAssemblyReference.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\obj\Debug\netcoreapp2.1\Panda.Data.csproj.CoreCompileInputs.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\obj\Debug\netcoreapp2.1\Panda.Data.AssemblyInfoInputs.cache
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\obj\Debug\netcoreapp2.1\Panda.Data.AssemblyInfo.cs
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\obj\Debug\netcoreapp2.1\Panda.Data.csproj.CopyComplete
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\obj\Debug\netcoreapp2.1\Panda.Data.dll
+F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Panda.Data\obj\Debug\netcoreapp2.1\Panda.Data.pdb

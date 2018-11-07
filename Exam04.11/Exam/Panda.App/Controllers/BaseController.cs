@@ -2,6 +2,8 @@
 {
     using System.Linq;
     using System.Runtime.CompilerServices;
+    using Domain.Enums;
+    using Infrastructure.Constants;
     using SIS.Framework.ActionResults;
     using SIS.Framework.Controllers;
 
@@ -18,23 +20,23 @@
         {
             if (this.Identity == null)
             {
-                this.Model.Data["NotLogged"] = "block";
-                this.Model.Data["IsLogged"] = "none";
-                this.Model.Data["IsAdmin"] = "none";
+                this.Model.Data[GlobalConstants.ViewSetups.NotLogged] = GlobalConstants.Display.DisplayBlock;
+                this.Model.Data[GlobalConstants.ViewSetups.IsLogged] = GlobalConstants.Display.DisplayNone;
+                this.Model.Data[GlobalConstants.ViewSetups.IsAdmin] = GlobalConstants.Display.DisplayNone;
             }
-            else if (this.Identity.Roles.Contains("Admin"))
+            else if (this.Identity.Roles.Contains(nameof(UserRole.Admin)))
             {
-                this.Model.Data["NotLogged"] = "none";
-                this.Model.Data["IsLogged"] = "block";
-                this.Model.Data["IsAdmin"] = "block";
-                this.Model.Data["NotAdmin"] = "none";
+                this.Model.Data[GlobalConstants.ViewSetups.NotLogged] = GlobalConstants.Display.DisplayNone;
+                this.Model.Data[GlobalConstants.ViewSetups.IsLogged] = GlobalConstants.Display.DisplayBlock;
+                this.Model.Data[GlobalConstants.ViewSetups.IsAdmin] = GlobalConstants.Display.DisplayBlock;
+                this.Model.Data[GlobalConstants.ViewSetups.NotAdmin] = GlobalConstants.Display.DisplayNone;
             }
             else
             {
-                this.Model.Data["NotLogged"] = "none";
-                this.Model.Data["IsLogged"] = "block";
-                this.Model.Data["IsAdmin"] = "none";
-                this.Model.Data["NotAdmin"] = "block";
+                this.Model.Data[GlobalConstants.ViewSetups.NotLogged] = GlobalConstants.Display.DisplayNone;
+                this.Model.Data[GlobalConstants.ViewSetups.IsLogged] = GlobalConstants.Display.DisplayBlock;
+                this.Model.Data[GlobalConstants.ViewSetups.IsAdmin] = GlobalConstants.Display.DisplayNone;
+                this.Model.Data[GlobalConstants.ViewSetups.NotAdmin] = GlobalConstants.Display.DisplayBlock;
             }
         }
     }
