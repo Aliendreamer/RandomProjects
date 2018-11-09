@@ -1,6 +1,8 @@
 ﻿namespace Panda.App.Controllers
 {
+    using Domain.Enums;
     using Services.Interfaces;
+    using Infrastructure.Constants;
     using SIS.Framework.ActionResults;
     using SIS.Framework.Attributes.Action;
     using SIS.Framework.Attributes.Method;
@@ -16,7 +18,7 @@
         private IPackageService PackageService { get; }
 
         [HttpGet]
-        [Authorize("Admin")]
+        [Authorize(nameof(UserRole.Admin))]
         public IActionResult Create()
         {
             var users = this.PackageService.GetRecipientNames();
@@ -27,7 +29,7 @@
         }
 
         [HttpPost]
-        [Authorize("Admin")]
+        [Authorize(nameof(UserRole.Admin))]
         public IActionResult Create(PackageCreateModel model)
         {
             this.PackageService.CreatePackage(model);
@@ -35,7 +37,7 @@
         }
 
         [HttpGet]
-        [Authorize("Admin", "User")]
+        [Authorize(nameof(UserRole.Admin), nameof(UserRole.User))]
         public IActionResult Details(int id)
         {
             var package = this.PackageService.PackageDetailsById(id);
@@ -45,47 +47,47 @@
         }
 
         [HttpGet]
-        [Authorize("Admin")]
+        [Authorize(nameof(UserRole.Admin))]
         public IActionResult Pending()
         {
-            var shipments = this.PackageService.GetPackagesByShipmentStatus(nameof(this.Pending));
+            var shipments = this.PackageService.GetPackagesByShipmentStatus(nameof(PackageStatus.Pending));
 
             this.Model.Data["PendingPackages"] = shipments;
-            this.Model.Data["Details"] = "none";
-            this.Model.Data["Ship"] = "block";
-            this.Model.Data["Deliver"] = "none";
+            this.Model.Data["Details"] = GlobalConstants.Display.DisplayNone;
+            this.Model.Data["Ship"] = GlobalConstants.Display.DisplayBlock;
+            this.Model.Data["Deliver"] = GlobalConstants.Display.DisplayNone;
 
             return this.View();
         }
 
         [HttpGet]
-        [Authorize("Admin")]
+        [Authorize(nameof(UserRole.Admin))]
         public IActionResult Shipped()
         {
-            var shipments = this.PackageService.GetPackagesByShipmentStatus(nameof(this.Shipped));
+            var shipments = this.PackageService.GetPackagesByShipmentStatus(nameof(PackageStatus.Shipped));
 
             this.Model.Data["ShippedPackages"] = shipments;
-            this.Model.Data["Details"] = "none";
-            this.Model.Data["Ship"] = "none";
-            this.Model.Data["Deliver"] = "block";
+            this.Model.Data["Details"] = GlobalConstants.Display.DisplayNone;
+            this.Model.Data["Ship"] = GlobalConstants.Display.DisplayNone;
+            this.Model.Data["Deliver"] = GlobalConstants.Display.DisplayBlock;
             return this.View();
         }
 
         [HttpGet]
-        [Authorize("Admin")]
+        [Authorize(nameof(UserRole.Admin))]
         public IActionResult Delivered()
         {
-            var shipments = this.PackageService.GetPackagesByShipmentStatus(nameof(this.Delivered));
+            var shipments = this.PackageService.GetPackagesByShipmentStatus(nameof(PackageStatus.Delivered));
 
             this.Model.Data["DeliveredPackages"] = shipments;
-            this.Model.Data["Ship"] = "none";
-            this.Model.Data["Deliver"] = "none";
-            this.Model.Data["Details"] = "block";
+            this.Model.Data["Ship"] = GlobalConstants.Display.DisplayNone;
+            this.Model.Data["Deliver"] = GlobalConstants.Display.DisplayNone;
+            this.Model.Data["Details"] = GlobalConstants.Display.DisplayBlock;
             return this.View();
         }
 
         [HttpGet]
-        [Authorize("Admin")]
+        [Authorize(nameof(UserRole.Admin))]
         public IActionResult Ship(int id)
         {
             this.PackageService.Ship(id);
@@ -93,7 +95,7 @@
         }
 
         [HttpGet]
-        [Authorize("Admin")]
+        [Authorize(nameof(UserRole.Admin))]
         public IActionResult Deliver(int id)
         {
             this.PackageService.Deliver(id);
@@ -101,7 +103,7 @@
         }
 
         [HttpGet]
-        [Authorize("Admin", "User")]
+        [Authorize(nameof(UserRole.Admin), nameof(UserRole.User))]
         public IActionResult Acquire(int id)
         {
             this.PackageService.Acquire(id, this.Identity.Username);

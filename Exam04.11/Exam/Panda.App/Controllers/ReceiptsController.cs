@@ -1,5 +1,6 @@
 ﻿namespace Panda.App.Controllers
 {
+    using Domain.Enums;
     using Services.Interfaces;
     using SIS.Framework.ActionResults;
     using SIS.Framework.Attributes.Action;
@@ -15,7 +16,7 @@
         private IReceiptsService ReceiptsService { get; }
 
         [HttpGet]
-        [Authorize("Admin", "User")]
+        [Authorize(nameof(UserRole.Admin), nameof(UserRole.User))]
         public IActionResult Index()
         {
             var displayModels = this.ReceiptsService.IndexModels(this.Identity.Username);
@@ -24,7 +25,7 @@
         }
 
         [HttpGet]
-        [Authorize("Admin", "User")]
+        [Authorize(nameof(UserRole.Admin), nameof(UserRole.User))]
         public IActionResult Details(int id)
         {
             var receipt = this.ReceiptsService.GetReceiptById(id);
