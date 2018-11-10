@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Common\\Panda.Infrastructure.csproj",
+      "projectUniqueName": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Common\\Panda.Infrastructure.csproj",
       "projectName": "Panda.Infrastructure",
-      "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Common\\Panda.Infrastructure.csproj",
+      "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Common\\Panda.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Teo\\.nuget\\packages\\",
-      "outputPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Common\\obj\\",
+      "outputPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

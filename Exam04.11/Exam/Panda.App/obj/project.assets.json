@@ -3677,11 +3677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.App\\Panda.App.csproj",
+      "projectUniqueName": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.App\\Panda.App.csproj",
       "projectName": "Panda.App",
-      "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.App\\Panda.App.csproj",
+      "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.App\\Panda.App.csproj",
       "packagesPath": "C:\\Users\\Teo\\.nuget\\packages\\",
-      "outputPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.App\\obj\\",
+      "outputPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3700,11 +3700,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Services\\Panda.Services.csproj": {
-              "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Services\\Panda.Services.csproj"
+            "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Services\\Panda.Services.csproj": {
+              "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Services\\Panda.Services.csproj"
             },
-            "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj": {
-              "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj"
+            "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj": {
+              "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj"
             }
           }
         }

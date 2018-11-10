@@ -722,11 +722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj",
+      "projectUniqueName": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj",
       "projectName": "SIS.Framework",
-      "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj",
+      "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj",
       "packagesPath": "C:\\Users\\Teo\\.nuget\\packages\\",
-      "outputPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.Framework\\obj\\",
+      "outputPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.Framework\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -745,11 +745,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.HTTP\\SIS.HTTP.csproj": {
-              "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.HTTP\\SIS.HTTP.csproj"
+            "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.HTTP\\SIS.HTTP.csproj": {
+              "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.HTTP\\SIS.HTTP.csproj"
             },
-            "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.WebServer\\SIS.WebServer.csproj": {
-              "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.WebServer\\SIS.WebServer.csproj"
+            "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.WebServer\\SIS.WebServer.csproj": {
+              "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.WebServer\\SIS.WebServer.csproj"
             }
           }
         }

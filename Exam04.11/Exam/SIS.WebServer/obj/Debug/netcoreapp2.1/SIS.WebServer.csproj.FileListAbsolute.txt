@@ -10,3 +10,15 @@ F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netco
 F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.csproj.CopyComplete
 F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.dll
 F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.pdb
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.WebServer.deps.json
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.WebServer.dll
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.WebServer.pdb
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.HTTP.dll
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\bin\Debug\netcoreapp2.1\SIS.HTTP.pdb
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.csprojAssemblyReference.cache
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.csproj.CoreCompileInputs.cache
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.AssemblyInfoInputs.cache
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.AssemblyInfo.cs
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.csproj.CopyComplete
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.dll
+F:\csharp\projectsForGithub\Exam04.11\Exam\SIS.WebServer\obj\Debug\netcoreapp2.1\SIS.WebServer.pdb

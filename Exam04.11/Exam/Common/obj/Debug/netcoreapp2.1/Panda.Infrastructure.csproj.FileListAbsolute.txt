@@ -7,3 +7,12 @@ F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.
 F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.AssemblyInfo.cs
 F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.dll
 F:\csharp\CsharpWeb\csharpweb092018\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.pdb
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\bin\Debug\netcoreapp2.1\Panda.Infrastructure.deps.json
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\bin\Debug\netcoreapp2.1\Panda.Infrastructure.dll
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\bin\Debug\netcoreapp2.1\Panda.Infrastructure.pdb
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.csprojAssemblyReference.cache
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.csproj.CoreCompileInputs.cache
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.AssemblyInfoInputs.cache
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.AssemblyInfo.cs
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.dll
+F:\csharp\projectsForGithub\Exam04.11\Exam\Common\obj\Debug\netcoreapp2.1\Panda.Infrastructure.pdb

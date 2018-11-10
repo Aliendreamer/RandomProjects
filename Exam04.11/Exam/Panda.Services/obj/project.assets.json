@@ -3658,11 +3658,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Services\\Panda.Services.csproj",
+      "projectUniqueName": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Services\\Panda.Services.csproj",
       "projectName": "Panda.Services",
-      "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Services\\Panda.Services.csproj",
+      "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Services\\Panda.Services.csproj",
       "packagesPath": "C:\\Users\\Teo\\.nuget\\packages\\",
-      "outputPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Services\\obj\\",
+      "outputPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3681,17 +3681,17 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Common\\Panda.Infrastructure.csproj": {
-              "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Common\\Panda.Infrastructure.csproj"
+            "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Common\\Panda.Infrastructure.csproj": {
+              "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Common\\Panda.Infrastructure.csproj"
             },
-            "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Data\\Panda.Data.csproj": {
-              "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Data\\Panda.Data.csproj"
+            "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Data\\Panda.Data.csproj": {
+              "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Data\\Panda.Data.csproj"
             },
-            "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Models\\Panda.Domain.csproj": {
-              "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\Panda.Models\\Panda.Domain.csproj"
+            "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Models\\Panda.Domain.csproj": {
+              "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\Panda.Models\\Panda.Domain.csproj"
             },
-            "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj": {
-              "projectPath": "F:\\csharp\\CsharpWeb\\csharpweb092018\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj"
+            "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj": {
+              "projectPath": "F:\\csharp\\projectsForGithub\\Exam04.11\\Exam\\SIS.Framework\\SIS.Framework.csproj"
             }
           }
         }
