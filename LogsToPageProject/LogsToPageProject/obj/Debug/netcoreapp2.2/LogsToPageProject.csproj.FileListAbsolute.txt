@@ -1,0 +1,14 @@
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\bin\Debug\netcoreapp2.2\LogsToPageProject.deps.json
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\bin\Debug\netcoreapp2.2\LogsToPageProject.runtimeconfig.json
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\bin\Debug\netcoreapp2.2\LogsToPageProject.runtimeconfig.dev.json
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\bin\Debug\netcoreapp2.2\LogsToPageProject.dll
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\bin\Debug\netcoreapp2.2\LogsToPageProject.pdb
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.csprojAssemblyReference.cache
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.csproj.CoreCompileInputs.cache
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.RazorAssemblyInfo.cache
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.RazorAssemblyInfo.cs
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.AssemblyInfoInputs.cache
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.AssemblyInfo.cs
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.RazorTargetAssemblyInfo.cache
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.dll
+C:\RandomThings\coding\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.pdb
