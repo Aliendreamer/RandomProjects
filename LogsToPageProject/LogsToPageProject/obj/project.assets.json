@@ -12079,11 +12079,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\RandomThings\\coding\\LogsToPageProject\\LogsToPageProject\\LogsToPageProject.csproj",
+      "projectUniqueName": "C:\\RandomThings\\coding\\RandomProjects\\LogsToPageProject\\LogsToPageProject\\LogsToPageProject.csproj",
       "projectName": "LogsToPageProject",
-      "projectPath": "C:\\RandomThings\\coding\\LogsToPageProject\\LogsToPageProject\\LogsToPageProject.csproj",
+      "projectPath": "C:\\RandomThings\\coding\\RandomProjects\\LogsToPageProject\\LogsToPageProject\\LogsToPageProject.csproj",
       "packagesPath": "C:\\Users\\User_PC\\.nuget\\packages\\",
-      "outputPath": "C:\\RandomThings\\coding\\LogsToPageProject\\LogsToPageProject\\obj\\",
+      "outputPath": "C:\\RandomThings\\coding\\RandomProjects\\LogsToPageProject\\LogsToPageProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

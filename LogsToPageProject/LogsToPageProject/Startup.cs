@@ -48,7 +48,7 @@ namespace LogsToPageProject
 			{
 				routes.MapRoute(
 					name: "default",
-					template: "{controller}/{action}",
+					template: "api/{controller}/{action}",
 					defaults: new { controller = "Logs", action = "Get" });
 			});
 		}
