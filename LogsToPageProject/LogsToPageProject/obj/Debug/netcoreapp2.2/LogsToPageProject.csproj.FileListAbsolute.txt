@@ -17,7 +17,6 @@ C:\RandomThings\coding\RandomProjects\LogsToPageProject\LogsToPageProject\bin\De
 C:\RandomThings\coding\RandomProjects\LogsToPageProject\LogsToPageProject\bin\Debug\netcoreapp2.2\LogsToPageProject.runtimeconfig.dev.json
 C:\RandomThings\coding\RandomProjects\LogsToPageProject\LogsToPageProject\bin\Debug\netcoreapp2.2\LogsToPageProject.dll
 C:\RandomThings\coding\RandomProjects\LogsToPageProject\LogsToPageProject\bin\Debug\netcoreapp2.2\LogsToPageProject.pdb
-C:\RandomThings\coding\RandomProjects\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.csprojAssemblyReference.cache
 C:\RandomThings\coding\RandomProjects\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.csproj.CoreCompileInputs.cache
 C:\RandomThings\coding\RandomProjects\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.RazorAssemblyInfo.cache
 C:\RandomThings\coding\RandomProjects\LogsToPageProject\LogsToPageProject\obj\Debug\netcoreapp2.2\LogsToPageProject.RazorAssemblyInfo.cs

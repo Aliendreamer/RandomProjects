@@ -44,13 +44,7 @@ namespace LogsToPageProject
 			}
 
 			app.UseHttpsRedirection();
-			app.UseMvc(routes =>
-			{
-				routes.MapRoute(
-					name: "default",
-					template: "api/{controller}/{action}",
-					defaults: new { controller = "Logs", action = "Get" });
-			});
+			app.UseMvc();
 		}
 	}
 }

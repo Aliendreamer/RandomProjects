@@ -3,6 +3,7 @@
 	using Microsoft.AspNetCore.Mvc;
 	using Services;
 
+	[ApiController]
 	[Route("api/logs")]
 	public class LogsController:ControllerBase
 	{
@@ -32,9 +33,9 @@
 
 		[HttpDelete]
 		[Route("{serviceName}/{id}")]
-		public IActionResult DeleteLog(string serviceName,int index)
+		public IActionResult DeleteLog(string serviceName,int id)
 		{
-			var logsLeft= this._logService.DeleteLogByIndex(serviceName, index);
+			var logsLeft= this._logService.DeleteLogByIndex(serviceName, id);
 			return Ok(logsLeft);
 		}
 	}
