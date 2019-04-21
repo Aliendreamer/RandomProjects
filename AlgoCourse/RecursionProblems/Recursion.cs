@@ -69,7 +69,31 @@
 
 		public void NestedLoopsRecursion(int n)
 		{
-			
+			int length =n;
+			var counters = new int[n];
+			NestedLoopOperation(counters,length,0);
+		}
+		private void NestedLoopOperation(int[] counters, int length, int level)
+		{
+			if (level == counters.Length) performOperation(counters);
+			else
+			{
+				for (counters[level] = 1; counters[level] < length; counters[level]++)
+				{
+					NestedLoopOperation(counters, length, level + 1);
+				}
+			}
+		}
+
+		private void performOperation(int[] counters)
+		{
+			string counterAsString = " ";
+			for (int level = 1; level < counters.Length; level++)
+			{
+				counterAsString = counterAsString + counters[level];
+				if (level < counters.Length - 1) counterAsString = counterAsString + " ";
+			}
+			Console.WriteLine(counterAsString);
 		}
 	}
 }
