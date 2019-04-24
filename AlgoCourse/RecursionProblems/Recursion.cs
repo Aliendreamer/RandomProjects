@@ -7,11 +7,11 @@
 	public class Recursion<T>
 	{
 		private T[] Collection { get; set; }
-		private int Index {get;set;}
+		private int Index { get; set; }
 
 		public Recursion()
 		{
-				
+
 		}
 
 		public Recursion(int index)
@@ -20,7 +20,7 @@
 		}
 		public Recursion(T[] arr)
 		{
-			this.Collection =arr;
+			this.Collection = arr;
 		}
 
 		public void GetCollection(T[] arr)
@@ -41,24 +41,24 @@
 				throw new ArgumentException("the massive shouldn't be empty!");
 			}
 			var currentIndex = 0;
-			
+
 			this.Collection = this.Collection.OrderBy(x => x).ToArray();
 			var middlePoint = this.Collection.Count() / 2;
-			var collectionReversed= ShiftRecursively(currentIndex, middlePoint);
+			var collectionReversed = ShiftRecursively(currentIndex, middlePoint);
 			return collectionReversed;
 		}
 
-		private IEnumerable<T> ShiftRecursively(int currentIndex,int middlePoint)
+		private IEnumerable<T> ShiftRecursively(int currentIndex, int middlePoint)
 		{
-		
+
 			var current = this.Collection[currentIndex];
-			var indexToSwap = (this.Collection.Length-1) - currentIndex;
+			var indexToSwap = (this.Collection.Length - 1) - currentIndex;
 			var elementToChange = this.Collection[indexToSwap];
 			var holder = current;
-			
+
 			this.Collection[currentIndex] = elementToChange;
 			this.Collection[indexToSwap] = holder;
-		
+
 			if (currentIndex < middlePoint)
 			{
 				ShiftRecursively(currentIndex + 1, middlePoint);
@@ -69,9 +69,9 @@
 
 		public void NestedLoopsRecursion(int n)
 		{
-			int length =n;
+			int length = n;
 			var counters = new int[n];
-			NestedLoopOperation(counters,length,0);
+			NestedLoopOperation(counters, length, 0);
 		}
 		private void NestedLoopOperation(int[] counters, int length, int level)
 		{
@@ -95,5 +95,23 @@
 			}
 			Console.WriteLine(counterAsString);
 		}
+
+
+
+		public void Combinations(int[] arr, int setCount, int index = 0, int element = 1)
+		{
+			if (index >= arr.Length)
+			{
+				Console.WriteLine(string.Join(" ", arr));
+				return;
+			}
+
+			for (int i = element; i <= setCount; i++)
+			{
+				arr[index] = i;
+				Combinations(arr, setCount, index + 1, i);
+			}
+		}
+
 	}
 }

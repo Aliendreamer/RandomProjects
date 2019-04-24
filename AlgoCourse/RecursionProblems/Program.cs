@@ -9,8 +9,12 @@
 		{
 			//ReverserArray();
 			var r=new Recursion<int>();
-			r.NestedLoopsRecursion(4);
-
+			//r.NestedLoopsRecursion(4);
+			//int loopsCount = int.Parse(Console.ReadLine());
+			//var loops = new int[loopsCount];
+			//r.Combinations(loops,loopsCount, 0);
+			var tower=new TowerOfHanoi(3);
+			tower.MoveDiscs();
 		}
 
 		public static void ReverserArray()
