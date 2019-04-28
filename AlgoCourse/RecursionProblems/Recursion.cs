@@ -1,6 +1,7 @@
 ﻿namespace RecursionProblems
 {
 	using System;
+	using System.Collections;
 	using System.Collections.Generic;
 	using System.Linq;
 
@@ -8,16 +9,18 @@
 	{
 		private T[] Collection { get; set; }
 		private int Index { get; set; }
+		private int[] Set { get; set; }
+		private int[] CombcCollection { get; set; }
 
 		public Recursion()
 		{
-
 		}
 
 		public Recursion(int index)
 		{
 			this.Index = index;
 		}
+
 		public Recursion(T[] arr)
 		{
 			this.Collection = arr;
@@ -27,7 +30,6 @@
 		{
 			this.Collection = arr;
 		}
-
 
 		public void GetIndex(int index)
 		{
@@ -50,7 +52,6 @@
 
 		private IEnumerable<T> ShiftRecursively(int currentIndex, int middlePoint)
 		{
-
 			var current = this.Collection[currentIndex];
 			var indexToSwap = (this.Collection.Length - 1) - currentIndex;
 			var elementToChange = this.Collection[indexToSwap];
@@ -66,13 +67,13 @@
 			return this.Collection;
 		}
 
-
 		public void NestedLoopsRecursion(int n)
 		{
 			int length = n;
 			var counters = new int[n];
 			NestedLoopOperation(counters, length, 0);
 		}
+
 		private void NestedLoopOperation(int[] counters, int length, int level)
 		{
 			if (level == counters.Length) performOperation(counters);
@@ -96,8 +97,6 @@
 			Console.WriteLine(counterAsString);
 		}
 
-
-
 		public void Combinations(int[] arr, int setCount, int index = 0, int element = 1)
 		{
 			if (index >= arr.Length)
@@ -113,5 +112,27 @@
 			}
 		}
 
+		public void GenerateWithoutRepetition(int setCount, int vectorCount)
+		{
+			this.CombcCollection = Enumerable.Range(1, setCount).ToArray();
+			this.Set = new int[vectorCount];
+			GenCombs(0, 0);
+		}
+
+		private void GenCombs(int setIndex, int vectorIndex)
+		{
+			if (vectorIndex == Set.Length)
+			{
+				Console.WriteLine(string.Join(" ", this.Set));
+			}
+			else
+			{
+				for (int i = setIndex; i < CombcCollection.Length; i++)
+				{
+					Set[vectorIndex] = CombcCollection[i];
+					GenCombs(i + 1, vectorIndex + 1);
+				}
+			}
+		}
 	}
 }
