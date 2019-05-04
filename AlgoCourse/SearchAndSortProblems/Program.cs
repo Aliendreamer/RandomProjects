@@ -14,8 +14,6 @@
 			//Console.WriteLine(index);
 			//baseS.SortedSequenceWithBubleSort(sequence);
 			//baseS.PrintCollection();
-			var result=baseS.CalculateInversions(sequence?.ToList());
-			Console.WriteLine(result);
 		}
 	}
 }

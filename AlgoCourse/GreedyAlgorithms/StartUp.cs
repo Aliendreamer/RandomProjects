@@ -1,10 +1,11 @@
 ﻿namespace GreedyAlgorithms
 {
-	class StartUp
+	public class StartUp
 	{
-		static void Main()
+		public static void Main()
 		{
-		
+			//Base.FractionalKnapsackProblem();
+			Base.KnightProblem();
 		}
 	}
 }
