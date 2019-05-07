@@ -11,24 +11,19 @@
 		public IEnumerable<int> SortedSequenceWithBubleSort(int[] array)
 		{
 			this.SortedCollection = new List<int>(array);
-
-			bool swapped = true;
-
-			while (swapped)
+				
+			for (int i = 0; i < this.SortedCollection.Count - 1; i++)
 			{
-				swapped = false;
-				for (int i = 0; i < this.SortedCollection.Count - 1; i++)
-				{
 					var current = SortedCollection[i];
 					var next = SortedCollection[i + 1];
 					if (current > next)
 					{
 						SortedCollection[i] = next;
 						SortedCollection[i + 1] = current;
-						swapped = true;
+					
 					}
-				}
 			}
+			
 
 			return this.SortedCollection;
 		}
