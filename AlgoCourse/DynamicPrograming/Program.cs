@@ -7,7 +7,7 @@ namespace DynamicPrograming
 		static void Main()
 		{
 		  var baseClass=new Base();
-		  baseClass.Presents();
+		  baseClass.LimitedCoinsCombinations();
 		}
 	}
 }

@@ -2,7 +2,6 @@
 {
 	using System;
 	using System.Collections.Generic;
-	using System.ComponentModel;
 	using System.Diagnostics.CodeAnalysis;
 	using System.Linq;
 
@@ -158,5 +157,81 @@
 		}
 
 		}
+
+		public void CombinationOfCoins()
+		{
+			int[] coins = Console.ReadLine()
+				.Split()
+				.Select(int.Parse)
+				.ToArray();
+
+			int sum = int.Parse(Console.ReadLine());
+
+			int[,] maxCombCount = new int[coins.Length + 1, sum + 1];
+				for (int i = 0; i <= coins.Length; i++)
+				{
+					maxCombCount[i, 0] = 1;
+				}
+
+				for (int i = 1; i <= coins.Length; i++)
+				{
+					for (int j = 1; j <= sum; j++)
+					{
+						if (coins[i - 1] <= j)
+						{
+							var a = maxCombCount[i - 1, j];
+							var b = maxCombCount[i, j - coins[i - 1]];
+							maxCombCount[i, j] = maxCombCount[i - 1, j] + maxCombCount[i, j - coins[i - 1]];
+						}
+						else
+						{
+							maxCombCount[i, j] = maxCombCount[i - 1, j];
+						}
+					}
+				}
+
+				Console.WriteLine(maxCombCount[coins.Length, sum]);
+			}
+
+		public void LimitedCoinsCombinations()
+		{
+			var coins = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+			var sum = int.Parse(Console.ReadLine());
+			int[,] maxCount = new int[coins.Length + 1, sum + 1];
+			for (int i = 0; i <= coins.Length; i++)
+			{
+				maxCount[i, 0] = 1;
+			}
+
+			for (int i = 1; i <= coins.Length; i++)
+			{
+				for (int j = sum; j >= 0; j--)
+				{
+					if (coins[i - 1] <= j && maxCount[i - 1, j - coins[i - 1]] != 0)
+					{
+						maxCount[i, j]++;
+					}
+					else
+					{
+						maxCount[i, j] = maxCount[i - 1, j];
+					}
+				}
+			}
+
+			int count = 0;
+			for (int i = 0; i <= coins.Length; i++)
+			{
+				if (maxCount[i, sum] != 0)
+				{
+					count++;
+				}
+			}
+			Console.WriteLine(count);
+
+		}
+
+
+
+
 	}
 }
