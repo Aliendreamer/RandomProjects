@@ -207,6 +207,9 @@
 			{
 				for (int j = sum; j >= 0; j--)
 				{
+					var a = coins[i - 1];
+					//var b = maxCount[i - 1, j - coins[i - 1]];
+
 					if (coins[i - 1] <= j && maxCount[i - 1, j - coins[i - 1]] != 0)
 					{
 						maxCount[i, j]++;
