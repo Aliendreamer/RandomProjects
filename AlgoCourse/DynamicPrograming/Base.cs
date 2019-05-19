@@ -179,8 +179,6 @@
 					{
 						if (coins[i - 1] <= j)
 						{
-							var a = maxCombCount[i - 1, j];
-							var b = maxCombCount[i, j - coins[i - 1]];
 							maxCombCount[i, j] = maxCombCount[i - 1, j] + maxCombCount[i, j - coins[i - 1]];
 						}
 						else
@@ -208,14 +206,17 @@
 				for (int j = sum; j >= 0; j--)
 				{
 					var a = coins[i - 1];
-					//var b = maxCount[i - 1, j - coins[i - 1]];
+					
 
 					if (coins[i - 1] <= j && maxCount[i - 1, j - coins[i - 1]] != 0)
 					{
+						var b = maxCount[i - 1, j - coins[i - 1]];
+
 						maxCount[i, j]++;
 					}
 					else
 					{
+						var c= maxCount[i - 1, j];
 						maxCount[i, j] = maxCount[i - 1, j];
 					}
 				}
@@ -233,8 +234,137 @@
 
 		}
 
+		public void ConnectingCablesAlgo()
+		{
+			int[] permutationRow = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries)
+				.Select(int.Parse).ToArray();
 
+			var orderedRow = permutationRow.OrderBy(x => x).ToArray();
+			int maxPairs = GetCount(orderedRow,permutationRow,orderedRow.Length-1,permutationRow.Length-1);
+			Console.WriteLine(maxPairs);	
 
+		}
 
+		private int GetCount(int[]ordered,int[]permutated,int x,int y)
+		{
+
+			if (x <0 || y < 0)
+			{
+				return 0;
+
+			}
+
+			if (permutated[x]==ordered[y])
+			{
+				return 1 + GetCount(ordered,permutated,x - 1, y - 1);
+			}
+			else
+			{
+				int reducedOne = GetCount(ordered, permutated, x - 1, y);
+				int reduceTwo = GetCount(ordered, permutated, x, y - 1);
+				return Math.Max(reduceTwo, reducedOne);
+			}
+		}
+
+		public void MinimumEditDistance()
+		{
+			char[] delimeters = new[] { '=', ' ' };
+			int replaceCost = Console.ReadLine().Split(delimeters, StringSplitOptions.RemoveEmptyEntries).Skip(1).Select(int.Parse).ToArray()[0];
+			int insertCost = Console.ReadLine().Split(delimeters, StringSplitOptions.RemoveEmptyEntries).Skip(1).Select(int.Parse).ToArray()[0];
+			int deleteCost = Console.ReadLine().Split(delimeters, StringSplitOptions.RemoveEmptyEntries).Skip(1).Select(int.Parse).ToArray()[0];
+			string first = Console.ReadLine().Split(new[] { '=' }, StringSplitOptions.RemoveEmptyEntries).ToArray()[1].Trim();
+			string second = Console.ReadLine().Split(new[] { '=' }, StringSplitOptions.RemoveEmptyEntries).ToArray()[1].Trim();
+			int[,] editCost = new int[first.Length+1,second.Length+1];
+
+			Compute(editCost,first, second,deleteCost,insertCost,replaceCost);
+		}
+
+		private void Compute(int[,]editCost,string first, string second,int deleteCost,int insertCost,int replaceCost)
+		{
+			int firstLen = first.Length;
+			int secondLen = second.Length;
+
+			for (int row = 0; row <= firstLen; row++)
+			{
+				editCost[row, 0] = row * deleteCost;
+			}
+
+			for (int col = 0; col <= secondLen; col++)
+			{
+				editCost[0, col] = col * insertCost;
+			}
+
+			for (int row = 1; row <= firstLen; row++)
+			{
+				for (int col = 1; col <= secondLen; col++)
+				{
+					int cost = second[col - 1] == first[row - 1] ? 0 : replaceCost;
+
+					int delete = editCost[row - 1, col] + deleteCost;
+					int replace = editCost[row - 1, col - 1] + cost;
+					int insert = editCost[row, col - 1] + insertCost;
+
+					editCost[row, col] = Math.Min(Math.Min(delete, insert), replace);
+				}
+			}
+
+			PrintResult(editCost,first, second, firstLen, secondLen,replaceCost,deleteCost,insertCost);
+		}
+
+		private void PrintResult(int [,]editCost,string first, string second, int firstLen, int secondLen,int replaceCost,int deleteCost,int insertCost)
+		{
+			Console.WriteLine("Minimum edit distance: " + editCost[firstLen, secondLen]);
+
+			var resultOperations = new Stack<string>();
+			int fIndex = firstLen;
+			int sIndex = secondLen;
+			while (fIndex > 0 && sIndex > 0)
+			{
+				if (first[fIndex - 1] == second[sIndex - 1])
+				{
+					fIndex--;
+					sIndex--;
+				}
+				else
+				{
+					int replace = editCost[fIndex - 1, sIndex - 1] + replaceCost;
+					int delete = editCost[fIndex - 1, sIndex] + deleteCost;
+					int insert = editCost[fIndex, sIndex - 1] + insertCost;
+					if (replace <= delete && replace <= insert)
+					{
+						resultOperations.Push($"REPLACE({fIndex - 1}, {second[sIndex - 1]})");
+						fIndex--;
+						sIndex--;
+					}
+					else if (delete < replace && delete < insert)
+					{
+						resultOperations.Push($"DELETE({fIndex - 1})");
+						fIndex--;
+					}
+					else
+					{
+						resultOperations.Push($"INSERT({sIndex - 1}, {second[sIndex - 1]})");
+						sIndex--;
+					}
+				}
+			}
+
+			while (fIndex > 0)
+			{
+				resultOperations.Push($"DELETE({fIndex - 1})");
+				fIndex--;
+			}
+
+			while (sIndex > 0)
+			{
+				resultOperations.Push($"INSERT({sIndex - 1}, {second[sIndex - 1]})");
+				sIndex--;
+			}
+
+			foreach (string resultOperation in resultOperations)
+			{
+				Console.WriteLine(resultOperation);
+			}
+		}
 	}
 }
